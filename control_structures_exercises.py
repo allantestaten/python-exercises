@@ -26,7 +26,7 @@ hourly_rate = 20
 if hours_worked <= 40:
     paycheck = hours_worked * hourly_rate
     print(paycheck)
-elif hours_worked > 40
+elif hours_worked > 40:
     print("OVERTIME!")
     ot_hours = (hours_worked - 40)
     ot_rate = hour_rate * 1.5
