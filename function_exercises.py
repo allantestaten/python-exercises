@@ -149,3 +149,17 @@ def normalize_name(name):
     #isidentifier (identifies identifier in string)
 11. #11. Write a function named cumulative_sum that accepts a list of numbers 
 #and returns a list that is the cumulative sum of the numbers in the list.
+my_list = [3,6,2]
+my_list[:1]
+
+def cumulative_sum(oldlist):
+    newlist = []
+    i = 1
+    for num in oldlist:
+        cumusum = sum(oldlist[:i])
+        newlist.append(cumusum)
+        i += 1
+    return newlist
+
+
+cumulative_sum([3,6,2])
